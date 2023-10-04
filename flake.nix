@@ -60,7 +60,7 @@
                 | tee /dev/stdout
               )
               
-              echo "Found $count issues"
+              echo "$count"
               end_time=$(date +%s)
               echo "Ran in $((end_time - start_time))s"
               if [ $count -gt 0 ]; then
